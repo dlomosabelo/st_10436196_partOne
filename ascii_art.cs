@@ -50,5 +50,5 @@ namespace st_10436196_partOne
                 Console.WriteLine();
             }
         } // End of constructor
-    } 
-}
+    } //end of class
+}//end of namespace

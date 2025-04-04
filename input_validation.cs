@@ -58,7 +58,7 @@ namespace st_10436196_partOne
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("ChatBot: ");
             Console.ForegroundColor = ConsoleColor.Gray;
-            TypeEffect("Hey " + user_name + ", How can i help you?");
+            TypeEffect("Hey " + user_name + ", How can i Assist you?");
 
             // Start the conversation loop with do-while
             do
@@ -149,6 +149,6 @@ namespace st_10436196_partOne
                 Thread.Sleep(30); // Adjust speed as needed
             }
             Console.WriteLine();
-        }
-    }
-}
+        }// end of constructor
+    }//end of class
+}//end of namespace
