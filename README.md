@@ -1,8 +1,8 @@
-st_10436196_partOne
+st_10436196_part2
 README FILE
 
   Project details
-. Project name: St10436196_partOne
+. Project name: St10436196_part2
 . Netframe: 4.0.8
 . Templates: Console App C# Netframework
 
@@ -71,13 +71,86 @@ Program Start:
 The program first plays a voice greeting to welcome the user.
 Then, it displays an ASCII art logo.
 User Interaction:
-The chatbot greets the user and asks for their name.
-After receiving the user’s name, the chatbot invites the user to ask questions about cybersecurity.
-Handling User Questions:
-The chatbot analyzes the user’s question and matches it with predefined topics (passwords, phishing, and browsing).
-The chatbot provides relevant cybersecurity advice based on the question.
-If the question does not match any of the predefined topics, the chatbot asks the user to rephrase the question.
 
+This console-based chatbot is designed to raise awareness about cybersecurity topics such as passwords, phishing, privacy, malware, and more. It uses C# features like **delegates, collections, file I/O, and basic AI-like logic to create a more interactive and educational experience.
+
+ User Interaction
+
+* Greets new or returning users.
+* Remembers user name and interests between sessions using a `memory.txt` file.
+* Offers topic suggestions based on stored user interests.
+
+Topics Covered
+
+* Password Safety
+* Phishing
+* Safe Browsing
+* Privacy
+* Malware
+* Scams
+* General Cybersecurity Tips
+
+Sentiment Detection
+
+Detects and responds empathetically to user emotions such as:
+
+* Worried
+* Scared
+* Confused
+* Frustrated
+* Curious
+* Interested
+
+ Dynamic Responses
+
+ Randomized response selection from pre-defined lists to avoid repetition.
+ Adds follow-up tips when users revisit previously mentioned interests.
+
+ Memory and Recall
+
+ Stores user preferences and conversations in a dictionary.
+ Saves and loads data from `memory.txt`.
+
+ Conversation Flow
+
+ Keeps a history of the conversation.
+ Prompts the user with helpful reminders like how to exit the chat.
+ Responds to common phrases like "hello", "thanks", "help", or "tell me more".
+
+
+
+1. Clone or Download the Project
+2. Open the project in your C# IDE.
+3. Make sure `memory.txt` is located in the same directory as the executable (or it will be created automatically).
+4. Build and run the project.
+5. Interact with the chatbot via the console window.
+
+
+
+  File Structure
+
+plaintext
+ 
+ input_validation.cs     Main chatbot logic and interaction flow
+ memory.txt              Stores user memory (name, interest)
+Program.cs              (Not shown here, but required to instantiate input_validation)
+
+
+
+ Concepts Demonstrated
+
+Delegates (`SentimentResponseSelector`)
+Collections (`Dictionary`, `List`)
+ File I/O (`StreamReader/Writer` for memory)
+  Looping and Conditional Logic
+User Input Parsing and Basic Sentiment Detection
+Console Formatting and Typing Effects
+Personalized and Context-Aware Responses
+
+
+
+You can exit the chatbot anytime by typing `exit`.
+If the chatbot does not respond to your query, it suggests rephrasing or revisiting a previous topic of interest.
 
 Exit:
 The user can exit the conversation by typing "exit," and the chatbot will thank them before ending the program.
