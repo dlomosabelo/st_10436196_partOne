@@ -2,7 +2,7 @@
 using System.IO;
 using System;
 
-namespace st_10436196_partOne
+namespace st_10436196_partTwo
 {
     public class ascii_art
     {

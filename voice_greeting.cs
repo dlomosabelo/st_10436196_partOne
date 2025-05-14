@@ -2,7 +2,7 @@
 using System.Media;
 using System;
 
-namespace st_10436196_partOne
+namespace st_10436196_partTwo
 {
     public class voice_greeting
     {
